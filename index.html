@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>宿迁迪玛商贸有限公司｜工业品 · 五金用品 · 家装建材</title>
+  <meta name="description" content="宿迁迪玛商贸有限公司，京东线上店铺矩阵与对公采购、源头供货服务，覆盖工业品、五金用品和家装建材。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #071c35;
+      --ink-2: #0f2d4d;
+      --paper: #f5f6f2;
+      --card: #ffffff;
+      --muted: #607186;
+      --line: rgba(7, 28, 53, .12);
+      --amber: #f4b036;
+      --amber-2: #ffd37c;
+      --blue-soft: #dfeaf2;
+      --shadow: 0 24px 70px rgba(7, 28, 53, .12);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: 'Noto Sans SC', system-ui, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .container { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+    .eyebrow {
+      color: var(--amber);
+      font: 800 12px/1.2 Manrope, sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .hero {
+      min-height: 760px;
+      position: relative;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(4, 24, 48, .95) 0%, rgba(4, 24, 48, .83) 41%, rgba(4, 24, 48, .12) 78%),
+        url('./dima-industrial-hero-background.png') center / cover no-repeat;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: auto 0 0;
+      height: 140px;
+      background: linear-gradient(transparent, var(--paper));
+      pointer-events: none;
+    }
+    .nav {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 0;
+    }
+    .brand {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.32);
+      border-radius: 12px;
+      color: var(--amber);
+      font: 800 15px Manrope, sans-serif;
+    }
+    .nav-links { display: flex; gap: 28px; color: rgba(255,255,255,.78); font-size: 14px; }
+    .nav-links a:hover { color: white; }
+    .nav-cta {
+      padding: 11px 18px;
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 999px;
+      color: white;
+      font-size: 13px;
+      transition: .2s ease;
+    }
+    .nav-cta:hover { background: white; color: var(--ink); }
+    .hero-content { position: relative; z-index: 1; padding: 110px 0 150px; max-width: 690px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin: 18px 0 22px; max-width: 660px; font-size: clamp(40px, 6vw, 76px); line-height: 1.08; letter-spacing: -.055em; }
+    .hero-lede { max-width: 585px; color: rgba(255,255,255,.78); font-size: 18px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
+    .button { display: inline-flex; align-items: center; gap: 10px; padding: 13px 20px; border-radius: 999px; font-weight: 700; font-size: 14px; transition: transform .2s ease, background .2s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--amber); color: var(--ink); }
+    .button-secondary { border: 1px solid rgba(255,255,255,.32); color: white; }
+    .button-secondary:hover { background: rgba(255,255,255,.12); }
+    .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 70px; max-width: 840px; }
+    .stat { padding: 20px 22px; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; background: rgba(4,24,48,.38); backdrop-filter: blur(12px); }
+    .stat strong { display: block; color: white; font-size: 28px; letter-spacing: -.03em; }
+    .stat span { display: block; margin-top: 5px; color: rgba(255,255,255,.68); font-size: 13px; }
+    section { padding: 110px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 38px; }
+    .section-head h2 { margin: 12px 0 0; max-width: 600px; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; letter-spacing: -.05em; }
+    .section-head p { max-width: 420px; margin-bottom: 4px; color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 30px; align-items: stretch; }
+    .about-copy { padding: 38px; border-radius: var(--radius-lg); background: var(--card); box-shadow: var(--shadow); }
+    .about-copy p { color: var(--muted); font-size: 17px; }
+    .about-copy p + p { margin-top: 20px; }
+    .about-image { min-height: 420px; overflow: hidden; border-radius: var(--radius-lg); background: var(--ink); box-shadow: var(--shadow); }
+    .about-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .business-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .business-card { position: relative; min-height: 310px; padding: 32px; overflow: hidden; border-radius: var(--radius-lg); background: var(--ink); color: white; }
+    .business-card:nth-child(2) { background: var(--ink-2); }
+    .business-card::after { content: ''; position: absolute; width: 240px; height: 240px; right: -80px; bottom: -100px; border: 1px solid rgba(244,176,54,.38); border-radius: 50%; box-shadow: 0 0 0 28px rgba(244,176,54,.06), 0 0 0 56px rgba(244,176,54,.035); }
+    .business-card h3 { margin: 14px 0 10px; font-size: 30px; letter-spacing: -.04em; }
+    .business-card p { max-width: 410px; color: rgba(255,255,255,.72); }
+    .business-list { position: relative; z-index: 1; display: grid; gap: 10px; margin-top: 28px; padding: 0; list-style: none; }
+    .business-list li { display: flex; gap: 12px; align-items: center; color: rgba(255,255,255,.82); font-size: 14px; }
+    .business-list li::before { content: ''; width: 7px; height: 7px; flex: none; border-radius: 50%; background: var(--amber); }
+    .category-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .category { min-height: 160px; display: flex; flex-direction: column; justify-content: space-between; padding: 22px; border: 1px solid var(--line); border-radius: var(--radius-md); background: rgba(255,255,255,.58); transition: transform .2s ease, background .2s ease, border-color .2s ease; }
+    .category:hover { transform: translateY(-4px); border-color: rgba(244,176,54,.64); background: white; }
+    .category-number { color: var(--amber); font: 800 12px Manrope, sans-serif; letter-spacing: .12em; }
+    .category h3 { margin: 25px 0 0; font-size: 19px; letter-spacing: -.03em; }
+    .category p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+    .brand-section { background: var(--ink); color: white; }
+    .brand-section .section-head p { color: rgba(255,255,255,.62); }
+    .brand-cloud { display: flex; flex-wrap: wrap; gap: 10px; }
+    .brand-pill { padding: 13px 16px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; color: rgba(255,255,255,.82); font-size: 14px; background: rgba(255,255,255,.05); }
+    .brand-pill strong { color: var(--amber-2); font-weight: 700; }
+    .contact-wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: stretch; }
+    .contact-card { padding: 36px; border-radius: var(--radius-lg); background: var(--card); box-shadow: var(--shadow); }
+    .contact-card h2 { max-width: 510px; margin: 12px 0 16px; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -.05em; }
+    .contact-card p { max-width: 540px; color: var(--muted); }
+    .contact-note { margin-top: 24px; padding: 16px 18px; border-left: 3px solid var(--amber); background: #fff8e8; color: #765411; font-size: 14px; }
+    .contact-details { display: grid; gap: 14px; margin-top: 28px; }
+    .contact-detail { display: flex; justify-content: space-between; gap: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-size: 14px; }
+    .contact-detail span:first-child { color: var(--muted); }
+    .contact-visual { min-height: 360px; padding: 34px; border-radius: var(--radius-lg); background: linear-gradient(140deg, #dbe8ef 0%, #b7cddb 100%); overflow: hidden; }
+    .contact-visual-inner { height: 100%; display: flex; flex-direction: column; justify-content: space-between; padding: 26px; border: 1px solid rgba(7,28,53,.14); border-radius: 22px; background: linear-gradient(145deg, rgba(7,28,53,.94), rgba(15,45,77,.88)); color: white; }
+    .contact-visual-inner strong { font-size: 42px; line-height: 1; letter-spacing: -.06em; }
+    .contact-visual-inner small { color: rgba(255,255,255,.68); }
+    footer { padding: 30px 0 42px; background: var(--ink); color: rgba(255,255,255,.62); font-size: 13px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+    .footer-brand { color: white; font-weight: 800; }
+    @media (max-width: 920px) {
+      .nav-links { display: none; }
+      .hero { min-height: 700px; }
+      .hero-content { padding-top: 90px; }
+      .hero-stats { grid-template-columns: 1fr; max-width: 360px; margin-top: 46px; }
+      .about-grid, .contact-wrap { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 600px) {
+      .container { width: min(100% - 32px, 1180px); }
+      section { padding: 76px 0; }
+      .hero { min-height: 760px; background-position: 65% center; }
+      .hero-content { padding-top: 74px; }
+      h1 { font-size: 47px; }
+      .hero-lede { font-size: 16px; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 18px; }
+      .business-grid { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: 1fr; }
+      .about-copy, .contact-card { padding: 26px; }
+      .footer-row { display: block; }
+      .footer-row span { display: block; margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="container">
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="#top"><span class="brand-mark">DM</span><span>宿迁迪玛商贸</span></a>
+        <div class="nav-links">
+          <a href="#about">公司主体</a>
+          <a href="#business">两大业务</a>
+          <a href="#categories">产品方向</a>
+          <a href="#brands">品牌矩阵</a>
+        </div>
+        <a class="nav-cta" href="#contact">对公合作</a>
+      </nav>
+
+      <div class="hero-content">
+        <div class="eyebrow">Industrial Supply · B2B Sourcing</div>
+        <h1>工业品、五金用品与家装建材的线上销售与对公供货。</h1>
+        <p class="hero-lede">宿迁迪玛商贸有限公司以京东线上店铺矩阵为基础，同时面向企业客户提供对公采购与源头供货支持。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#business">了解两大业务 <span>↗</span></a>
+          <a class="button button-secondary" href="#contact">对公合作咨询</a>
+        </div>
+        <div class="hero-stats" aria-label="公司概览">
+          <div class="stat"><strong>1000+</strong><span>京东线上店铺矩阵</span></div>
+          <div class="stat"><strong>2 条</strong><span>线上与对公业务板块</span></div>
+          <div class="stat"><strong>多品类</strong><span>工业品、五金、建材</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">About Dima</div>
+            <h2>先把公司主体讲清楚，再进入产品与合作。</h2>
+          </div>
+          <p>面向企业采购、品牌合作方和京东平台用户，快速理解我们卖什么、怎么供货、如何合作。</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-copy">
+            <p>宿迁迪玛商贸有限公司是一家专注于工业品、五金用品和家装建材领域的综合型电商与供货服务企业。</p>
+            <p>公司围绕两条业务线展开：一方面运营 1000+ 家京东线上店铺，覆盖多个工业品与建材产品方向；另一方面面向企业客户提供对公采购和源头供货服务。</p>
+            <p>重点经营品牌覆盖工业自动化、电气、泵业、劳保安全、消防、工具仪器、轴承传动、打印办公设备及电子电源等领域。</p>
+          </article>
+          <div class="about-image">
+            <img src="./dima-company-intro-card.png" alt="宿迁迪玛商贸有限公司公司介绍主视觉" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="business" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Two Business Lines</div>
+            <h2>两条业务线，服务两类采购场景。</h2>
+          </div>
+          <p>线上店铺解决多品类选购，对公业务承接企业采购与持续供货。</p>
+        </div>
+        <div class="business-grid">
+          <article class="business-card">
+            <div class="eyebrow">01 · Online Commerce</div>
+            <h3>京东线上店铺矩阵</h3>
+            <p>运营 1000+ 家京东线上店铺，面向平台用户提供工业品、五金用品、家装建材等多品类产品。</p>
+            <ul class="business-list">
+              <li>多品类产品展示与线上销售</li>
+              <li>覆盖工业品、工具、建材与办公设备</li>
+              <li>通过京东平台承接日常采购需求</li>
+            </ul>
+          </article>
+          <article class="business-card">
+            <div class="eyebrow">02 · B2B Supply</div>
+            <h3>对公采购与源头供货</h3>
+            <p>面向企业客户提供对公采购支持和源头供货服务，适合批量采购、长期合作和品类配套。</p>
+            <ul class="business-list">
+              <li>支持企业客户对公采购</li>
+              <li>围绕具体品类与采购需求进行沟通</li>
+              <li>提供长期供货合作对接入口</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Product Directions</div>
+            <h2>从自动化元件到家装建材，按采购场景组织产品。</h2>
+          </div>
+          <p>这里先展示公司的主要产品方向，后续可以继续拆分成独立品类页。</p>
+        </div>
+        <div class="category-grid">
+          <article class="category"><span class="category-number">01</span><div><h3>工业自动化与控制</h3><p>控制器、自动化元件及相关产品</p></div></article>
+          <article class="category"><span class="category-number">02</span><div><h3>电气与低压产品</h3><p>电气元件、配电与电源产品</p></div></article>
+          <article class="category"><span class="category-number">03</span><div><h3>泵类与水务设备</h3><p>泵类、水务及配套设备</p></div></article>
+          <article class="category"><span class="category-number">04</span><div><h3>劳保与消防安全</h3><p>劳保用品、消防与火灾报警产品</p></div></article>
+          <article class="category"><span class="category-number">05</span><div><h3>工具与测量仪器</h3><p>手工具、测量与检测类产品</p></div></article>
+          <article class="category"><span class="category-number">06</span><div><h3>轴承与传动产品</h3><p>轴承、皮带及传动相关产品</p></div></article>
+          <article class="category"><span class="category-number">07</span><div><h3>打印与办公设备</h3><p>打印机、复印及办公输出设备</p></div></article>
+          <article class="category"><span class="category-number">08</span><div><h3>五金与家装建材</h3><p>家装、施工及配套五金用品</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="brands" class="brand-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Brand Matrix</div>
+            <h2>覆盖多个工业品与办公设备品牌。</h2>
+          </div>
+          <p>以下品牌按你提供的名单整理，用于官网首版展示。后续可补充品牌分类与具体产品页。</p>
+        </div>
+        <div class="brand-cloud">
+          <span class="brand-pill"><strong>自动化</strong> 三菱 · 西门子 · 欧姆龙 · 信捷</span>
+          <span class="brand-pill"><strong>电气</strong> 正泰 · 德力西 · 上海人民 · 明纬</span>
+          <span class="brand-pill"><strong>泵业</strong> 凯泉 · 南方泵业</span>
+          <span class="brand-pill"><strong>安全</strong> 代尔塔 · 际华 · 霍尼韦尔</span>
+          <span class="brand-pill"><strong>消防</strong> 泰和安 · 北大青鸟 · 海湾</span>
+          <span class="brand-pill"><strong>工具</strong> 世达 · 福禄克 · 优利德 · 胜利仪器 · 三量</span>
+          <span class="brand-pill"><strong>传动</strong> 上银 · 三力士 · THK</span>
+          <span class="brand-pill"><strong>办公</strong> 奔图 · 东芝 · 理光 · 震旦 · 富士施乐 · 爱普生 · 映美 · 柯尼卡美能达</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-card">
+            <div class="eyebrow">Cooperation</div>
+            <h2>有具体品类或采购需求，欢迎对公沟通。</h2>
+            <p>你可以把需要采购的产品、品牌、数量或使用场景发给我们。官网正式上线前，这里会继续补充地址和具体对接方式。</p>
+            <div class="contact-note">当前版本已完成公司主体和业务结构展示，地址等其他信息可继续补充。</div>
+            <div class="contact-details">
+              <div class="contact-detail"><span>公司名称</span><strong>宿迁迪玛商贸有限公司</strong></div>
+              <div class="contact-detail"><span>合作方向</span><strong>对公采购 / 源头供货</strong></div>
+              <div class="contact-detail"><span>联系电话</span><strong>13515170797</strong></div>
+              <div class="contact-detail"><span>企业邮箱</span><strong>178377725@qq.com</strong></div>
+            </div>
+          </div>
+          <div class="contact-visual">
+            <div class="contact-visual-inner">
+              <small>SUQIAN DIMA · INDUSTRIAL SUPPLY</small>
+              <strong>把采购需求<br />变成可执行的供货。</strong>
+              <small>京东线上店铺矩阵 · 对公采购与源头供货</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span class="footer-brand">宿迁迪玛商贸有限公司</span>
+      <span>Industrial Products & Supply · <span id="year"></span></span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
